@@ -1,0 +1,32 @@
+//layout - author
+.author{
+    padding: 15px 20px;
+    &__img{
+        width: 10vh;
+        height: auto;
+    }
+    &-text{
+        padding-left: 10px;
+        margin: auto 0;
+        &__title{
+            font-weight: bold;
+        }
+        &__subtitle{
+            color: $silver;
+        }
+    }
+    &-btns{
+        margin: auto 0;
+        @include for-phone-only{
+            display: none;
+        }
+        &__mensaje{
+            color: $white;
+            background-color: $sky-blue;
+        }
+        &__seguir{
+            color: $white;
+            background-color: $persimmon;
+        }
+    }
+}

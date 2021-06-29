@@ -1,0 +1,14 @@
+.header{
+    &_img{
+        height:50vh;
+        object-fit: cover;
+        width:100%;
+        @include for-phone-only{
+            height:25vh;
+        }
+        @include for-tablet-portrait-up{
+            height:25vh;
+        }
+        
+    }
+}
